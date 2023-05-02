@@ -28,13 +28,14 @@ import com.codename1.ui.Label;
 import com.codename1.ui.layouts.BorderLayout;
 import com.codename1.ui.layouts.Layout;
 import com.codename1.ui.util.Resources;
-
+import gui.ShowCategorie;
 /**
  * Common code that can setup the side menu
  *
  * @author Shai Almog
  */
 public abstract class SideMenuBaseForm extends Form {
+    
 
     public SideMenuBaseForm(String title, Layout contentPaneLayout) {
         super(title, contentPaneLayout);
@@ -42,6 +43,7 @@ public abstract class SideMenuBaseForm extends Form {
 
     public SideMenuBaseForm(String title) {
         super(title);
+      
     }
 
     public SideMenuBaseForm() {
@@ -64,7 +66,7 @@ public abstract class SideMenuBaseForm extends Form {
         
         getToolbar().addComponentToSideMenu(sidemenuTop);
         getToolbar().addMaterialCommandToSideMenu("  Dashboard", FontImage.MATERIAL_DASHBOARD,  e -> showOtherForm(res));
-        getToolbar().addMaterialCommandToSideMenu("  Activity", FontImage.MATERIAL_TRENDING_UP,  e -> showOtherForm(res));
+        getToolbar().addMaterialCommandToSideMenu("  Categories", FontImage.MATERIAL_TRENDING_UP,  e -> new ShowCategorie(this).show());
         getToolbar().addMaterialCommandToSideMenu("  Tasks", FontImage.MATERIAL_ACCESS_TIME,  e -> showOtherForm(res));
         getToolbar().addMaterialCommandToSideMenu("  Account Settings", FontImage.MATERIAL_SETTINGS,  e -> showOtherForm(res));
         getToolbar().addMaterialCommandToSideMenu("  Logout", FontImage.MATERIAL_EXIT_TO_APP,  e -> new LoginForm(res).show());
