@@ -75,7 +75,7 @@ public class updatecategorie extends Form  {
     
 });
 getToolbar().addMaterialCommandToLeftBar("",FontImage.MATERIAL_ARROW_BACK, (evt) -> {
- new ShowCategorie(this).show();
+ new ShowCategorie(previous).show();
 });
 addAll(tfName,btnValider);
         

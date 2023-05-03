@@ -36,23 +36,22 @@ import services.ServiceCategories;
  *
  * @author Lord
  */
-public class ShowCategorie extends Form {
+public class ShowCategorieFront extends Form {
     
      Form f;
   Container C2 = new Container(new BoxLayout (BoxLayout.Y_AXIS));
   ArrayList<categories> list=ServiceCategories.getInstance().parsecat();
-    Button btnAdd=new Button("Add Categorie");
+
         
     
-  public ShowCategorie(Form previous) {
+  public ShowCategorieFront(Form previous) {
       f=this;
-
+      
       Toolbar.setGlobalToolbar(true);
       Style s = UIManager.getInstance().getComponentStyle("Categorie");
         //setTitle("List Categories");
-    btnAdd.addActionListener(e -> new AddCategorie(this).show());
-       
-      C2.add(btnAdd);
+  
+   
     TextField searchField = new TextField("", "Search");
 searchField.addDataChangeListener((i1, i2) -> {
     // Implement your search logic here 
@@ -62,7 +61,7 @@ searchField.addDataChangeListener((i1, i2) -> {
 
  
             C2.removeAll(); // remove all the existing components from the container
-               C2.add(btnAdd);
+               
             addcategorie(list); // add the filtered categories to the container
          
             refreshTheme();
@@ -70,7 +69,7 @@ searchField.addDataChangeListener((i1, i2) -> {
    else{
       list=ServiceCategories.getInstance().parsecat(); 
        C2.removeAll(); // remove all the existing components from the container
-       C2.add(btnAdd);
+       
        addcategorie(list); // add the filtered categories to the container
        
        refreshTheme();
@@ -109,22 +108,10 @@ addAll(C2);
 
         Container C1 = new Container(new BoxLayout (BoxLayout.X_AXIS));
        
-Button b = new Button("remove");
-Button mm = new Button("update");
-Label l = new Label(c.getTypec());
-b.addActionListener((evt) ->{
-     ServiceCategories.getInstance().deletecat(c.getId());
-      C2.removeComponent(l); // remove the label from the container
-    C2.removeComponent(C1); // remove the button container from the container
-    f.refreshTheme(); // refresh the form's theme
-});
-mm.addActionListener((evt) ->{
 
-     new updatecategorie(this,c).show();
-     
-     
-});
-   C1.addAll(l,b,mm);    
+Label l = new Label(c.getTypec());
+
+   C1.addAll(l);    
        
 
 C2.addAll(C1);
