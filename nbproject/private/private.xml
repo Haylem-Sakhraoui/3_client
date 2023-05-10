@@ -4,9 +4,16 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/codenameone/soundmobile/src/gui/updatecategorie.java</file>
-            <file>file:/C:/codenameone/soundmobile/src/services/ServiceCategories.java</file>
-            <file>file:/C:/codenameone/soundmobile/src/gui/ShowCategorie.java</file>
+            <file>file:/C:/Users/HAYLEM%20SAKHRAOUI/Desktop/PiDevMobile/src/gui/ServicesFront.java</file>
+            <file>file:/C:/Users/HAYLEM%20SAKHRAOUI/Desktop/PiDevMobile/src/gui/showCompetence.java</file>
+            <file>file:/C:/Users/HAYLEM%20SAKHRAOUI/Desktop/PiDevMobile/src/entities/Services.java</file>
+            <file>file:/C:/Users/HAYLEM%20SAKHRAOUI/Desktop/PiDevMobile/src/gui/ShowService.java</file>
+            <file>file:/C:/Users/HAYLEM%20SAKHRAOUI/Desktop/PiDevMobile/src/entities/Demande.java</file>
+            <file>file:/C:/Users/HAYLEM%20SAKHRAOUI/Desktop/PiDevMobile/src/com/mycompany/myapp/SideMenuBaseForm.java</file>
+            <file>file:/C:/Users/HAYLEM%20SAKHRAOUI/Desktop/PiDevMobile/src/entities/Reclamation.java</file>
+            <file>file:/C:/Users/HAYLEM%20SAKHRAOUI/Desktop/PiDevMobile/src/entities/Competence.java</file>
+            <file>file:/C:/Users/HAYLEM%20SAKHRAOUI/Desktop/PiDevMobile/src/services/ServiceServices.java</file>
+            <file>file:/C:/Users/HAYLEM%20SAKHRAOUI/Desktop/PiDevMobile/src/services/ServiceCompetence.java</file>
         </group>
     </open-files>
 </project-private>

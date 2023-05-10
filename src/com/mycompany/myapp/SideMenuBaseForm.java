@@ -28,8 +28,13 @@ import com.codename1.ui.Label;
 import com.codename1.ui.layouts.BorderLayout;
 import com.codename1.ui.layouts.Layout;
 import com.codename1.ui.util.Resources;
-import gui.ShowCategorie;
-import gui.ShowCategorieFront;
+import gui.ServicesFront;
+import gui.ShowDemande;
+import gui.ShowService;
+import gui.DemandeFront;
+import gui.ReclamationFront;
+import gui.showCompetence;
+
 /**
  * Common code that can setup the side menu
  *
@@ -66,11 +71,12 @@ public abstract class SideMenuBaseForm extends Form {
         sidemenuTop.setUIID("SidemenuTop");
         
         getToolbar().addComponentToSideMenu(sidemenuTop);
-        getToolbar().addMaterialCommandToSideMenu("  Dashboard", FontImage.MATERIAL_DASHBOARD,  e -> showOtherForm(res));
-        getToolbar().addMaterialCommandToSideMenu("  Categories Back", FontImage.MATERIAL_TRENDING_UP,  e -> new ShowCategorie(this).show());
-        getToolbar().addMaterialCommandToSideMenu("  Categorie Front", FontImage.MATERIAL_ACCESS_TIME,  e -> new ShowCategorieFront(this).show());
-        getToolbar().addMaterialCommandToSideMenu("  Account Settings", FontImage.MATERIAL_SETTINGS,  e -> showOtherForm(res));
-        getToolbar().addMaterialCommandToSideMenu("  Logout", FontImage.MATERIAL_EXIT_TO_APP,  e -> new LoginForm(res).show());
+        getToolbar().addMaterialCommandToSideMenu("  Demande Front", FontImage.MATERIAL_DASHBOARD,  e -> new DemandeFront(this).show());
+        getToolbar().addMaterialCommandToSideMenu("  Demande Back", FontImage.MATERIAL_SETTINGS,  e ->  new ShowDemande(this).show());
+        getToolbar().addMaterialCommandToSideMenu("  Service Back", FontImage.MATERIAL_TRENDING_UP,  e -> new ShowService(this).show());
+        getToolbar().addMaterialCommandToSideMenu("  Service Front", FontImage.MATERIAL_ACCESS_TIME,  e -> new ServicesFront(this).show());
+        getToolbar().addMaterialCommandToSideMenu("  Reclamation", FontImage.MATERIAL_EXIT_TO_APP,  e -> new ReclamationFront(this).show());
+        getToolbar().addMaterialCommandToSideMenu("  Portfolio", FontImage.MATERIAL_EXIT_TO_APP,  e -> new showCompetence(this).show());
     }
     
     protected abstract void showOtherForm(Resources res);
