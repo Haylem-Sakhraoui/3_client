@@ -1,0 +1,137 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 22 févr. 2023, 19:58:35
+    Author     : User
+*/
+
+.button {
+    -fx-cursor: hand;
+    -fx-background-color: #4CAF50; /* Couleur de fond */
+    -fx-text-fill: white; /* Couleur de texte */
+    -fx-font-size: 14px; /* Taille de police */
+    -fx-font-weight: bold; /* Épaisseur de police */
+    -fx-padding: 6px 12px; /* Marge intérieure */
+    -fx-background-radius: 30px; /* Rayon des coins */
+    -fx-border-color: #4CAF50; /* Couleur de bordure */
+    -fx-border-radius: 30px; /* Rayon de bordure */
+    -fx-border-width: 2px; /* Épaisseur de bordure */
+}
+
+
+
+.button:hover { -fx-background-color: #388E3C; /* Couleur de fond au survol */ -fx-border-color: #388E3C; /* Couleur de bordure au survol */ } .button:pressed { -fx-background-color: #1B5E20; /* Couleur de fond lors du clic */ -fx-border-color: #1B5E20; /* Couleur de bordure lors du clic */ }
+/* Style for text fields */
+.text-field {
+    -fx-background-color: white;
+    -fx-border-color: #CCCCCC;
+    -fx-border-radius: 2px;
+    -fx-padding: 6px;
+}
+
+/* Style for labels */
+.label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+
+/* Style for table view */
+
+/* Style for list view */
+
+
+.list-cell {
+    -fx-padding: 5px;
+}
+
+/* Style for menu bar */
+.menu-bar {
+    -fx-background-color: #333333;
+    -fx-text-fill: white;
+}
+
+.menu-item {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+/* Style for combo box */
+.combo-box {
+    -fx-background-color: white;
+    -fx-border-color: #CCCCCC;
+    -fx-padding: 6px;
+    -fx-font-size: 14px;
+}
+
+.combo-box-popup {
+    -fx-background-color: white;
+}
+
+/* Style for tab pane */
+.tab-pane {
+    -fx-background-color: white;
+    -fx-border-color: #CCCCCC;
+}
+
+
+
+.tab-header-area {
+    -fx-background-color: #F8F8F8;
+}
+
+.tab-pane > .tab-header-area > .headers-region > .tab:selected .focus-indicator {
+    -fx-border-color: #4CAF50;
+}
+
+.label {
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 18pt;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-background-color: #f0f0f0;
+    -fx-padding: 10px;
+    -fx-border-color: #d0d0d0;
+    -fx-border-radius: 5px;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.2) , 10, 0 , 0 , 3 );
+}
+
+.text {
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 16pt;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-background-color: transparent;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.2) , 10, 0 , 0 , 3 );
+}
+.backgroundColor{
+    -fx-background-color: linear-gradient(to right,#61D8DE, #E839F6);
+}
+.table-view{
+    -fx-padding : 0px;
+    -fx-background-color:transparent;
+    -fx-border-color: linear-gradient(to bottom right,#3567d2, #920796);
+    -fx-border-radius: 8px;
+    -fx-border-width: 6px;
+}
+
+.table-view .column-header{
+    -fx-alignment: CENTER;
+}
+.table tr {
+  background-color: white;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(to bottom right,#920796, #920796);
+    -fx-background-radius: 8px 8px 0 0;
+    -fx-background-inset: 0 0 0 0;
+}
+
+.table-view .column-header, .filter{
+    -fx-background-color: transparent;
+    -fx-size: 50px;
+}

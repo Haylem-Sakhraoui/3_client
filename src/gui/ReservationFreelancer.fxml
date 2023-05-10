@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="ap" prefHeight="662.0" prefWidth="1013.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ReservationFreelancerController">
+   <children>
+      <TableView fx:id="tb" layoutX="14.0" layoutY="69.0" onMouseClicked="#get_selected_item" prefHeight="300.0" prefWidth="320.0">
+        <columns>
+          <TableColumn fx:id="id_service" prefWidth="133.0" text="id service" />
+          <TableColumn fx:id="nom_categorie" prefWidth="184.0" text="nom categorie" />
+        </columns>
+      </TableView>
+      <Button layoutX="21.0" layoutY="432.0" mnemonicParsing="false" onMouseClicked="#afficher" text="Afficher" />
+      <TextField fx:id="zonerecherche" layoutX="14.0" layoutY="382.0" />
+      <Text layoutX="362.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reserver Freelancer" textAlignment="CENTER" wrappingWidth="276.0000042319298">
+         <font>
+            <Font name="System Italic" size="33.0" />
+         </font>
+      </Text>
+      <Button fx:id="pdf" layoutX="197.0" layoutY="575.0" mnemonicParsing="false" onMouseClicked="#GenererPDf" prefHeight="47.0" prefWidth="165.0" text="GenererPDF" />
+      <Button layoutX="392.0" layoutY="575.0" mnemonicParsing="false" onMouseClicked="#ReserverMail" text="Reserver" />
+      <TableView fx:id="tb2" layoutX="347.0" layoutY="69.0" onMouseClicked="#get_selected_item" prefHeight="300.0" prefWidth="320.0">
+        <columns>
+          <TableColumn fx:id="id_service2" prefWidth="144.0" text="id service" />
+          <TableColumn fx:id="nom_service" prefWidth="185.0" text="nom service" />
+        </columns>
+      </TableView>
+      <TextField fx:id="zoneselect" layoutX="347.0" layoutY="382.0" />
+      <TableView fx:id="tb1" layoutX="680.0" layoutY="69.0" prefHeight="300.0" prefWidth="320.0">
+        <columns>
+          <TableColumn fx:id="id_freelancer" prefWidth="154.0" text="id freelancer" />
+          <TableColumn fx:id="email_freelancer" prefWidth="181.0" text="email" />
+        </columns>
+      </TableView>
+      <TextArea fx:id="desc" layoutX="749.0" layoutY="418.0" prefHeight="200.0" prefWidth="183.0" text="description Mail:" wrapText="true" />
+      <Text fx:id="tx" layoutX="743.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description tache :">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Button layoutX="536.0" layoutY="575.0" mnemonicParsing="false" onMouseClicked="#Qrcode" text="GenererQR code" />
+      <ImageView fx:id="qrView" fitHeight="101.0" fitWidth="124.0" layoutX="570.0" layoutY="456.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

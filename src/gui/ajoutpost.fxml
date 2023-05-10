@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="655.0" stylesheets="@stylekhalil.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AjoutpostController">
+   <children>
+      <Text fill="#f2efef" layoutX="54.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Experience : ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Text>
+      <TextField fx:id="tf_exp_post" layoutX="228.0" layoutY="102.0" prefHeight="26.0" prefWidth="200.0" />
+      <Text fill="#f4f2f2" layoutX="54.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Text>
+      <TextArea fx:id="ta_desc_post" layoutX="228.0" layoutY="154.0" prefHeight="172.0" prefWidth="200.0" />
+      <Button fx:id="btn_postuler" layoutX="457.0" layoutY="300.0" mnemonicParsing="false" onAction="#ajout_post" text="Postuler" />
+      <Text fill="#f4f1f1" layoutX="14.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="l'identifiant de la demande :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Text>
+      <Text fill="#faf0f0" layoutX="204.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Déposer une poste">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Text>
+      <Button fx:id="btn_gener_pdf" layoutX="549.0" layoutY="300.0" mnemonicParsing="false" onAction="#generer_pdf" text="Génerer pdf " />
+      <ComboBox fx:id="cb_id_demande" layoutX="228.0" layoutY="59.0" prefHeight="26.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>

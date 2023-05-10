@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="655.0" stylesheets="@stylekhalil.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.modifdemController">
+   <children>
+      <Text fill="#f2eeee" layoutX="66.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modification demande">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Text>
+      <Button fx:id="btn_choisir" layoutX="548.0" layoutY="359.0" mnemonicParsing="false" onAction="#Modifier_demande" text="Modifier" />
+      <TableView fx:id="tv_modif_dem" layoutX="18.0" layoutY="59.0" onMouseClicked="#get_selected_item" prefHeight="326.0" prefWidth="490.0">
+        <columns>
+          <TableColumn fx:id="tv_id" prefWidth="34.399993896484375" text="ID" />
+          <TableColumn fx:id="tv_desc" prefWidth="95.99999618530273" text="description" />
+            <TableColumn fx:id="tv_exp" prefWidth="100.00001525878906" text="experience" />
+            <TableColumn fx:id="tv_rem" prefWidth="94.4000244140625" text="remuneration" />
+            <TableColumn fx:id="tv_expir" prefWidth="79.199951171875" text="expiration" />
+            <TableColumn fx:id="tv_tel" prefWidth="82.4000244140625" text="telephone" />
+        </columns>
+      </TableView>
+      <TextField fx:id="tf_id_modif_dem" layoutX="519.0" layoutY="37.0" prefHeight="26.0" prefWidth="121.0" />
+      <TextField fx:id="tf_desc_modif_dem" layoutX="522.0" layoutY="86.0" prefHeight="26.0" prefWidth="115.0" />
+      <TextField fx:id="tf_exp_modif_dem" layoutX="522.0" layoutY="135.0" prefHeight="26.0" prefWidth="115.0" />
+      <TextField fx:id="tf_rem_modif_dem" layoutX="521.0" layoutY="187.0" prefHeight="26.0" prefWidth="115.0" />
+      <TextField fx:id="tf_expir_modif_dem" layoutX="521.0" layoutY="246.0" prefHeight="26.0" prefWidth="115.0" />
+      <TextField fx:id="tf_tel_modif_dem" layoutX="521.0" layoutY="302.0" prefHeight="26.0" prefWidth="115.0" />
+      <Text fill="#efeded" layoutX="552.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Identifiant">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Text>
+      <Text fill="#f2eeee" layoutX="550.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="description">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Text>
+      <Text fill="#faf7f7" layoutX="549.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="experience" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Text>
+      <Text fill="#efeded" layoutX="544.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="remuneration">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Text>
+      <Text fill="#eae5e5" layoutX="552.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="expiration">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Text>
+      <Text fill="#ece8e8" layoutX="552.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="telephone">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="655.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.HomeRecruteurController">
+   <children>
+      <Label fx:id="welcomeText" layoutX="503.0" layoutY="78.0" prefHeight="17.0" prefWidth="94.0" text="Welcome" textFill="#6d7ebf" wrapText="true" />
+      <ImageView fitHeight="53.0" fitWidth="54.0" layoutX="539.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/icons8-utilisateur-50.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

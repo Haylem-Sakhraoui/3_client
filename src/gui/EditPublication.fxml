@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="618.0" prefWidth="513.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.EditPublicationController">
+  <children>
+      <AnchorPane id="AnchorPane" layoutY="7.0" prefHeight="611.0" prefWidth="516.0">
+         <children>
+            <Button fx:id="btn_post" layoutX="411.0" layoutY="572.0" mnemonicParsing="false" onAction="#Add" prefHeight="25.0" prefWidth="78.0" text="Post" />
+            <TableView fx:id="tableView_Publication" layoutX="55.0" layoutY="37.0" prefHeight="292.0" prefWidth="426.0">
+               <columns>
+                  <TableColumn fx:id="Col_Texte" onEditCommit="#changeTextCellEvent" prefWidth="219.0" resizable="false" text="Texte" />
+                  <TableColumn fx:id="Col_likes" minWidth="0.0" prefWidth="67.0" text="Likes" />
+                  <TableColumn fx:id="Col_date" prefWidth="125.0" text="Date" />
+               </columns>
+            </TableView>
+            <TextArea fx:id="text_area" layoutX="13.0" layoutY="500.0" prefHeight="63.0" prefWidth="482.0" />
+            <TableView fx:id="tableView_Links" layoutX="13.0" layoutY="341.0" prefHeight="117.0" prefWidth="482.0">
+               <columns>
+                  <TableColumn fx:id="Col_Links" prefWidth="480.0" text="Click on Post to See Photos Linked to it :" />
+               </columns>
+            </TableView>
+            <TextField fx:id="tf_ph" layoutX="52.0" layoutY="573.0" prefHeight="25.0" prefWidth="350.0" />
+            <Label layoutX="15.0" layoutY="577.0" text="Links:" />
+            <Button fx:id="btn_refresh" layoutX="24.0" layoutY="465.0" mnemonicParsing="false" onAction="#Display" prefHeight="17.0" prefWidth="62.0" text="Refresh" />
+            <Button fx:id="btn_addpic" disable="false" layoutX="416.0" layoutY="465.0" mnemonicParsing="false" onAction="#add_pic" text="Add Picture" />
+            <TextField fx:id="tf_url" disable="false" layoutX="96.0" layoutY="465.0" prefHeight="26.0" prefWidth="307.0" />
+            <TextField fx:id="tf_search" disable="true" layoutX="75.0" layoutY="11.0" onKeyTyped="#refresh" prefHeight="25.0" prefWidth="419.0" />
+            <Button fx:id="btn_search" disable="true" layoutX="13.0" layoutY="11.0" mnemonicParsing="false" onAction="#search" text="Search" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

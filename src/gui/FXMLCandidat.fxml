@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="800.0" stylesheets="@stylekhalil.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.FXMLCandidatController">
+   <children>
+      <AnchorPane fx:id="ap_post" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <VBox prefHeight="400.0" prefWidth="145.0" stylesheets="@stylekhalil.css">
+               <children>
+                  <Button fx:id="btn_home" mnemonicParsing="false" onMouseClicked="#diriger_vers_home_candidat" prefHeight="60.0" prefWidth="146.0" text="Home" />
+                  <Button fx:id="btn_ajout_post" mnemonicParsing="false" onMouseClicked="#diriger_vers_ajout_post" prefHeight="60.0" prefWidth="146.0" text="Deposer une&#10; poste" textAlignment="CENTER" />
+                  <Button fx:id="btn_supp_post" mnemonicParsing="false" onMouseClicked="#diriger_vers_supp_post" prefHeight="60.0" prefWidth="146.0" text="Supprimer une &#10;poste" textAlignment="CENTER" />
+                  <Button fx:id="btn_mod_post" mnemonicParsing="false" onMouseClicked="#diriger_vers_mod_post" prefHeight="60.0" prefWidth="146.0" text="modifier une &#10;poste" textAlignment="CENTER" />
+                  <Button fx:id="btn_affich_post" mnemonicParsing="false" onMouseClicked="#diriger_vers_affich_post" prefHeight="60.0" prefWidth="146.0" text="Afficher mes&#10; postes" textAlignment="CENTER" />
+                  <Button mnemonicParsing="false" onMouseClicked="#quitter" prefHeight="60.0" prefWidth="146.0" text="Quitter" />
+               </children>
+            </VBox>
+            <BorderPane fx:id="bp_post" layoutX="146.0" prefHeight="400.0" prefWidth="655.0" stylesheets="@stylekhalil.css">
+               <center>
+                  <Text fx:id="animatedtext" fill="#fcfafa" strokeType="OUTSIDE" strokeWidth="0.0" text="TN-JOB" textAlignment="CENTER" wrappingWidth="627.1880323886871" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="62.0" />
+                     </font>
+                  </Text>
+               </center></BorderPane>
+            <ImageView fitHeight="53.0" fitWidth="54.0" layoutX="724.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/icons8-utilisateur-50.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="welcomeText" layoutX="683.0" layoutY="90.0" prefHeight="17.0" prefWidth="94.0" text="Welcome" textFill="#e2e4ec" wrapText="true" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Page4Controller">
+   <children>
+      <Text layoutX="147.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modifier un service" wrappingWidth="267.5615234375">
+         <font>
+            <Font size="32.0" />
+         </font></Text>
+      <TextField fx:id="Mnom" layoutX="245.0" layoutY="479.0" />
+      <Text layoutX="72.0" layoutY="501.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Le nom de service" />
+      <TextField fx:id="NMnom" layoutX="245.0" layoutY="517.0" />
+      <Text layoutX="38.0" layoutY="539.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nouveau nom de service" />
+      <TextField fx:id="NMnb" layoutX="245.0" layoutY="555.0" />
+      <Text layoutX="26.0" layoutY="576.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nouveau nombre de freelancers" />
+      <Button layoutX="446.0" layoutY="555.0" mnemonicParsing="false" onAction="#modifier" text="Modifier!" />
+      <TableView fx:id="tvmodifier" layoutX="40.0" layoutY="141.0" onMouseClicked="#get_selected_item" prefHeight="319.0" prefWidth="738.0">
+        <columns>
+          <TableColumn fx:id="idservice" prefWidth="200.0" text="id&#10;service" />
+          <TableColumn fx:id="nomservice" prefWidth="297.0" text="nom&#10;service" />
+            <TableColumn fx:id="nbtotfr" prefWidth="240.0" text="nombre totale&#10;freelancers" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="805.0" prefWidth="1149.0" styleClass="primary-color" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.CreateProfileController">
+   <children>
+      <VBox layoutX="24.0" layoutY="163.0" prefHeight="250.0" prefWidth="232.0" spacing="15.0">
+         <children>
+            <HBox prefHeight="55.0" prefWidth="232.0" spacing="15.0">
+               <children>
+                  <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon%20et%20image/skills.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="50.0" prefWidth="175.0" text="Competence" textFill="#6312c6">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <TextField fx:id="A_Cmp_id" prefHeight="35.0" prefWidth="232.0" promptText="id" />
+            <TextField fx:id="Acompetence" prefHeight="45.0" prefWidth="232.0" promptText="Entrez  compétence" />
+            <Button fx:id="ajoutCmp" mnemonicParsing="false" onAction="#ajouterCompetence" prefHeight="39.0" prefWidth="107.0" stylesheets="@style.css" text="ADD" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font></Button>
+         </children>
+      </VBox>
+      <Button fx:id="retour" layoutX="951.0" layoutY="696.0" mnemonicParsing="false" onAction="#retourProfile" prefHeight="56.0" prefWidth="153.0" stylesheets="@style.css" text="PROFILE" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Button>
+      <VBox layoutX="302.0" layoutY="163.0" prefHeight="436.0" prefWidth="289.0" spacing="20.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon%20et%20image/exper.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="Experience" textFill="#5c23c6">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <TextField fx:id="A_Exp_id" prefHeight="100.0" prefWidth="40.0" promptText="id" />
+            <TextField fx:id="AnomEntreprise" prefHeight="100.0" prefWidth="194.0" promptText="Entrez nom d'entreprise" />
+            <TextField fx:id="Aposte" prefHeight="100.0" prefWidth="194.0" promptText="Entrez poste" />
+            <DatePicker fx:id="AdateD" prefHeight="100.0" prefWidth="336.0" promptText="date debut" />
+            <DatePicker fx:id="AdateF" prefHeight="100.0" prefWidth="317.0" promptText="date fin" />
+            <Button fx:id="ajoutExperience" mnemonicParsing="false" onAction="#ajouterExperience" prefHeight="39.0" prefWidth="113.0" stylesheets="@style.css" text="ADD" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font></Button>
+         </children>
+      </VBox>
+      <VBox layoutX="636.0" layoutY="163.0" prefHeight="524.0" prefWidth="289.0" spacing="30.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon%20et%20image/education.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="59.0" prefWidth="273.0" text="Education" textFill="#5c23c6">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <TextField fx:id="A_Edu_id" prefHeight="100.0" prefWidth="289.0" promptText="id" />
+            <TextField fx:id="Aetab" prefHeight="100.0" prefWidth="289.0" promptText="nom d'etablissement" />
+            <TextField fx:id="Aville" prefHeight="100.0" prefWidth="153.0" promptText="ville" />
+            <TextField fx:id="Apays" prefHeight="100.0" prefWidth="138.0" promptText="pays" />
+            <TextField fx:id="Adiplome" prefHeight="100.0" prefWidth="236.0" promptText="diplome" />
+            <DatePicker fx:id="AdateObtention" prefHeight="100.0" prefWidth="219.0" promptText="date  obtention" />
+            <Button fx:id="ajoutEducation" mnemonicParsing="false" onAction="#ajouterScolar" prefHeight="39.0" prefWidth="108.0" stylesheets="@style.css" text="ADD" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font></Button>
+         </children>
+      </VBox>
+      <VBox layoutX="971.0" layoutY="163.0" prefHeight="250.0" prefWidth="201.0" spacing="30.0">
+         <children>
+            <ImageView fitHeight="244.0" fitWidth="109.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon%20et%20image/CV.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="idcv" alignment="CENTER" mnemonicParsing="false" onAction="#uploadCv" prefHeight="48.0" prefWidth="160.0" stylesheets="@style.css" text="UPLOAD CV" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="22.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <HBox layoutX="24.0" layoutY="50.0" prefHeight="40.0" prefWidth="203.0" styleClass="button" stylesheets="@style.css">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Create your Profile" wrappingWidth="287.875">
+               <font>
+                  <Font name="System Bold Italic" size="30.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="787.0" prefWidth="656.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.FrontEnd_PublicationController">
+   <children>
+      <TextArea fx:id="ta_postFE" layoutX="20.0" layoutY="618.0" prefHeight="92.0" prefWidth="520.0" />
+      <TextField fx:id="tf_ph" layoutX="73.0" layoutY="721.0" prefHeight="26.0" prefWidth="466.0" />
+      <Button fx:id="btn_postFE" layoutX="569.0" layoutY="618.0" mnemonicParsing="false" onAction="#Add" prefHeight="130.0" prefWidth="64.0" text="Post" />
+      <ListView fx:id="lv_postFE" layoutX="24.0" layoutY="86.0" prefHeight="514.0" prefWidth="575.0" />
+      <Button fx:id="shouf" layoutX="20.0" layoutY="44.0" mnemonicParsing="false" onAction="#chouf" text="refresh" />
+      <Button fx:id="btn_search" layoutX="89.0" layoutY="44.0" mnemonicParsing="false" onAction="#Display_BySearch" prefHeight="26.0" prefWidth="50.0" text="search" />
+      <TextField fx:id="tf_search" layoutX="147.0" layoutY="45.0" prefHeight="26.0" prefWidth="450.0" />
+      <Label layoutX="12.0" layoutY="726.0" prefHeight="18.0" prefWidth="64.0" text="   Links :" />
+   </children>
+</AnchorPane>

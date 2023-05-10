@@ -1,0 +1,20 @@
+.root {
+    -fx-background-color: #05071F; 
+    -fx-background-size:cover; 
+     
+}
+
+
+.button {
+    -fx-cursor: hand;
+    -fx-background-image:url('back.jpg'); /* Couleur de fond */
+    -fx-text-fill: white; /* Couleur de texte */
+    -fx-font-size: 12px; /* Taille de police */
+    -fx-font-weight: bold; /* Épaisseur de police */
+     /* -fx-padding: 6px 12px;    Marge intérieure */
+    -fx-background-radius: 5px; /* Rayon des coins */
+    -fx-border-color: #faf7fa; /* Couleur de bordure */ 
+    -fx-border-radius: 5px; /* Rayon de bordure */
+    -fx-border-width: 2px; /* Épaisseur de bordure */
+}
+

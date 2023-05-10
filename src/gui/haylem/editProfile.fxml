@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="782.0" prefWidth="1145.0" styleClass="primary-color" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.EditProfileController">
+    <children>
+      <Button fx:id="annuler" layoutX="22.0" layoutY="698.0" mnemonicParsing="false" onAction="#returnProfile" prefHeight="53.0" prefWidth="131.0" text="PROFILE" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font></Button>
+      <VBox layoutX="26.0" layoutY="136.0" prefHeight="213.0" prefWidth="228.0" spacing="20.0">
+         <children>
+            <HBox prefHeight="51.0" prefWidth="228.0" spacing="10.0">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon%20et%20image/skills.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="40.0" prefWidth="167.0" text="Competence" textFill="#6312c6">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <TextField fx:id="id_cmp" prefHeight="100.0" prefWidth="228.0" promptText="Entrez ID" />
+            <TextField fx:id="editCmp" prefHeight="100.0" prefWidth="165.0" promptText="Entrez  compétence" />
+            <Button fx:id="modifierCmp" mnemonicParsing="false" onAction="#modifierCompetence" prefHeight="44.0" prefWidth="129.0" text="EDIT" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font></Button>
+            <Button fx:id="suppCmp" layoutX="10.0" layoutY="192.0" mnemonicParsing="false" onAction="#supprimerCompetence" prefHeight="44.0" prefWidth="142.0" text="DELETE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font></Button>
+         </children>
+      </VBox>
+      <VBox layoutX="307.0" layoutY="140.0" prefHeight="469.0" prefWidth="258.0" spacing="20.0">
+         <children>
+            <HBox prefHeight="61.0" prefWidth="258.0" spacing="10.0">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon%20et%20image/exper.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="53.0" prefWidth="213.0" text="Experience" textFill="#5c23c6">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <TextField fx:id="id_exp" prefHeight="31.0" prefWidth="87.0" promptText="Entrez ID" />
+            <TextField fx:id="nomentreprise" prefHeight="46.0" prefWidth="177.0" promptText="Entrez nom d'entreprise" />
+            <TextField fx:id="poste" prefHeight="46.0" prefWidth="177.0" promptText="Entrez poste" />
+            <DatePicker fx:id="dateD" prefHeight="46.0" prefWidth="153.0" promptText="date debut" />
+            <DatePicker fx:id="dateF" prefHeight="46.0" prefWidth="153.0" promptText="date fin" />
+            <Button fx:id="modifierExperience" mnemonicParsing="false" onAction="#modifierExperience" prefHeight="46.0" prefWidth="131.0" text="EDIT" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font></Button>
+            <Button fx:id="suppExp" layoutX="10.0" layoutY="406.0" mnemonicParsing="false" onAction="#supprimerExperience" prefHeight="47.0" prefWidth="159.0" text="DELETE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font></Button>
+         </children>
+      </VBox>
+      <VBox layoutX="619.0" layoutY="136.0" prefHeight="523.0" prefWidth="258.0" spacing="20.0">
+         <children>
+            <HBox prefHeight="66.0" prefWidth="258.0" spacing="10.0">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon%20et%20image/education.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="62.0" prefWidth="264.0" text="Education" textFill="#5c1ab9">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <TextField fx:id="id_scol" prefHeight="31.0" prefWidth="134.0" promptText="Entrez ID" />
+            <TextField fx:id="nomEtab" prefHeight="53.0" prefWidth="200.0" promptText="nom d'etablissement" />
+            <TextField fx:id="ville" prefHeight="46.0" prefWidth="118.0" promptText="ville" />
+            <TextField fx:id="pays" prefHeight="40.0" prefWidth="118.0" promptText="pays" />
+            <TextField fx:id="diplome" prefHeight="40.0" prefWidth="165.0" promptText="diplome" />
+            <DatePicker fx:id="dateO" prefHeight="53.0" prefWidth="200.0" promptText="date  obtention" />
+            <Button fx:id="modifierEducation" mnemonicParsing="false" onAction="#modifierScolar" prefHeight="44.0" prefWidth="139.0" text="EDIT" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font></Button>
+            <Button fx:id="suppEdu" layoutX="10.0" layoutY="479.0" mnemonicParsing="false" onAction="#supprimerScolar" prefHeight="44.0" prefWidth="139.0" text="DELETE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font></Button>
+         </children>
+      </VBox>
+      <VBox layoutX="948.0" layoutY="140.0" prefHeight="227.0" prefWidth="150.0" spacing="20.0">
+         <children>
+            <ImageView fitHeight="72.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon%20et%20image/CV.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="cvTextField" prefHeight="46.0" prefWidth="187.0" promptText="Entrez file path" />
+            <Button fx:id="uploadButton" mnemonicParsing="false" onAction="#uploadCV" prefHeight="46.0" prefWidth="155.0" text="UPLOAD CV" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font></Button>
+         </children>
+      </VBox>
+      <HBox layoutX="22.0" layoutY="21.0" prefHeight="53.0" prefWidth="329.0" styleClass="secondary-color" stylesheets="@style.css">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Editer votre Profile" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold Italic" size="30.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

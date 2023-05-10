@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" fx:id="ap" prefHeight="600.0" prefWidth="1000.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.CategoriesMainController">
+   <children>
+      <VBox prefHeight="600.0" prefWidth="212.0">
+         <children>
+            <Button mnemonicParsing="false" onMouseClicked="#home" prefHeight="110.0" prefWidth="212.0" style="-fx-background-color: #34495E; -fx-border-color: black;" text="home" />
+            <Button fx:id="button" mnemonicParsing="false" onMouseClicked="#ajoutercategorie" prefHeight="124.0" prefWidth="210.0" style="-fx-background-color: #34495E; -fx-border-color: black;" text="Ajouter&#10;categorie" textAlignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@informations.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="button" mnemonicParsing="false" onMouseClicked="#afficherlistecategories" prefHeight="122.0" prefWidth="212.0" style="-fx-background-color: #34495E; -fx-border-color: black;" text="Afficher&#10;categorie" textAlignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@developpement-dapplications.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="button" mnemonicParsing="false" onMouseClicked="#supprimercategorie" prefHeight="122.0" prefWidth="212.0" style="-fx-background-color: #34495E; -fx-border-color: black;" text="supprimer&#10;categorie" textAlignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="36.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@ferme-a-cle.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button mnemonicParsing="false" onMouseClicked="#modifiercategorie" prefHeight="122.0" prefWidth="212.0" style="-fx-background-color: #34495E; -fx-border-color: black;" text="Modifier&#10;categorie">
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@application-de-messagerie-vocale.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="button" mnemonicParsing="false" onMouseClicked="#Services" prefHeight="123.0" prefWidth="212.0" style="-fx-background-color: #34495E; -fx-border-color: black;" text="services">
+               <graphic>
+                  <ImageView fitHeight="39.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@logo.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+         </children>
+      </VBox>
+      <BorderPane fx:id="bp" layoutX="212.0" onMouseClicked="#pardefaut" prefHeight="600.0" prefWidth="800.0" />
+   </children>
+</AnchorPane>

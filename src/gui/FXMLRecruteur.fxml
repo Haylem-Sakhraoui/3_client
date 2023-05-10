@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" fx:id="ap" prefHeight="400.0" prefWidth="800.0" stylesheets="@stylekhalil.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.FXMLRecruteurController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="145.0" stylesheets="@stylekhalil.css">
+         <children>
+            <Button fx:id="btn_home_recruteur" mnemonicParsing="false" onMouseClicked="#diriger_vers_home_recruteur" prefHeight="60.0" prefWidth="146.0" text="Home" />
+            <Button fx:id="btnajout" mnemonicParsing="false" onMouseClicked="#diriger_vers_ajout" prefHeight="60.0" prefWidth="146.0" text="ajouter une&#10; demande" />
+            <Button fx:id="btnsupp" mnemonicParsing="false" onMouseClicked="#diriger_vers_suppression" prefHeight="60.0" prefWidth="146.0" text="supprimer une &#10;demande" textAlignment="CENTER" />
+            <Button fx:id="btnmodif" mnemonicParsing="false" onMouseClicked="#diriger_vers_modification" prefHeight="60.0" prefWidth="146.0" text="modifier une&#10; demande" textAlignment="CENTER" />
+            <Button fx:id="btnaffich" mnemonicParsing="false" onMouseClicked="#diriger_vers_affichage" prefHeight="60.0" prefWidth="146.0" text="afficher mes&#10;demandes" textAlignment="CENTER" />
+            <Button mnemonicParsing="false" onMouseClicked="#quitter" prefHeight="60.0" prefWidth="146.0" text="Quitter" />
+         </children>
+      </VBox>
+      <BorderPane fx:id="bp" layoutX="146.0" prefHeight="400.0" prefWidth="655.0" stylesheets="@stylekhalil.css" />
+   </children>
+</AnchorPane>

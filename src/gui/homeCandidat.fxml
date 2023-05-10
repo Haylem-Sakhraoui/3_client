@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="655.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.HomeCandidatController">
+   <children>
+      <TableView fx:id="tv_home_candidat" layoutX="11.0" layoutY="115.0" onMouseClicked="#get_selected_item_id" prefHeight="258.0" prefWidth="635.0">
+        <columns>
+          <TableColumn fx:id="id_cl_home" prefWidth="34.399993896484375" text="ID" />
+          <TableColumn fx:id="desc_cl_home" prefWidth="209.60004806518555" text="Description" />
+            <TableColumn fx:id="exp_cl_home" prefWidth="97.5999755859375" text="experience" />
+            <TableColumn fx:id="rem_cl_home" prefWidth="98.4000244140625" text="remuneration" />
+            <TableColumn fx:id="expir_cl_home" prefWidth="98.39996337890625" text="expiration" />
+            <TableColumn fx:id="tel_cl_home" prefWidth="96.0" text="Télephone" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="combobox" layoutX="485.0" layoutY="75.0" prefWidth="150.0" />
+      <Text layoutX="426.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Trier par :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <TextField fx:id="tf_search_home_candidat" layoutX="14.0" layoutY="74.0" prefHeight="26.0" prefWidth="135.0" promptText="chercher ..." />
+      <Button fx:id="btn_search_home_candidat" layoutX="149.0" layoutY="74.0" mnemonicParsing="false" onAction="#chercher" text="chercher" />
+   </children>
+</AnchorPane>
